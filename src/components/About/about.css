@@ -1,20 +1,13 @@
-.about .section__title {
-  margin: 0 0 3rem;
-}
-
 .about .section__box {
   flex-direction: column-reverse;
+  gap: 2.5rem;
 }
 
 .about__pic {
   align-self: center;
-  width: 80%;
-  height: 95%;
-  height:min-content;
-  margin: 20px 0;
+  width: 100%;
+  max-width: 500px;
   position: relative;
-  text-align: center;
-  padding-bottom: 6px;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -23,7 +16,6 @@
 
 .about__pic img {
   width: 100%;
-  max-width: 450px;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -34,13 +26,16 @@
   margin: 0 auto;
 }
 
+.about__content p {
+  margin-bottom: 1rem;
+}
+
 .stack-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  padding: 0;
-  margin: 25px 0;
+  margin: 2rem 0 0;
 }
 
 .stack-item {
@@ -59,6 +54,7 @@
 }
 
 @media (min-width: 768px) {
+
   .about .section__box {
     flex-direction: row;
     gap: 2rem;

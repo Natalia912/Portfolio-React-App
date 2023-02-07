@@ -26,5 +26,6 @@
 
   .footer__arrow {
     position: static;
+    margin-top: 2.5rem;
   }
 }

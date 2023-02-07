@@ -11,6 +11,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 2px solid var(--accent-color);
+  border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
 }
 
 .project__hero {
@@ -23,11 +27,10 @@
 .project__info {
   max-width: 500px;
   width: 100%;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid var(--accent-color);
-  border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -webkit-border-radius: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project__hero img {
@@ -41,15 +44,23 @@
 .project__title {
   font-size: 1.25rem;
   color: var(--accent-color);
+  text-decoration: none;
+  transition: color 350ms ease;
+}
+
+.project__title:hover,
+.project__title:focus {
+  color: var(--primary-text-color);
 }
 
 .project__stack {
   opacity: 0.6;
   font-size: 0.9rem;
+  margin: 0.5rem 0;
 }
 
 .project__description {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .project__visit {
@@ -78,6 +89,14 @@
     margin-bottom: 2rem;
   }
 
+  .project__stack {
+    margin: 1rem 0;
+  }
+
+  .project__description {
+    margin-bottom: 3rem;
+  }
+
 }
 
 @media (min-width: 975px) {
@@ -86,10 +105,13 @@
     grid-template-areas: "a ."
                          "a b"
                          "c b"
-                         "c .";
-    gap: 3rem 6rem;
+                         "c d"
+                         ". d";
+    gap: 4rem 4rem;
     max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    align-items: stretch;
   }
 
   .project-1 {
@@ -97,10 +119,13 @@
   }
 
   .project-2 {
-    grid-area: b;
+    grid-area: c;
   }
 
   .project-3 {
-    grid-area: c;
+    grid-area: d;
+  }
+  .project-4 {
+    grid-area: b;
   }
 }
