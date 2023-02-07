@@ -19,12 +19,12 @@ const projectsArr = [
       },
       {
         id: "3",
-        image: "quizapp.png",
-        imageFull: ["quizzletFull1.png", "quizzletFull2.png"],
-        title: "Quiz App",
-        stack: "React JS & API",
-        description: "It's my little personal project I made following a React JS course. It's a quiz app made with React JS and powered by Trivia API.",
-        url: "https://effortless-pastelito-220f6a.netlify.app/",
+        image: "shortie1.png",
+        imageFull: ["shortie.png", "shortie2.png", "shortie3.png", "shortie4.png"],
+        title: "URL Shortener web app",
+        stack: "React JS & TypeScript & URLO API",
+        description: "It's my little personal project I made following Frontend Mentor challenges. It's a url shortener app made with React JS, TypeScript and powered by URLO API.",
+        url: "https://shortie-alboo.netlify.app/",
         github: ""
       },
       {
